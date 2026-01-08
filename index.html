@@ -1,1 +1,295 @@
-
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mening Veb Saytim</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50, #4a6491);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background-color: #34495e;
+            padding: 1rem 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background-color: #2c3e50;
+        }
+        
+        main {
+            padding: 3rem 0;
+        }
+        
+        .section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #3498db;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .feature-card {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid #3498db;
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h3 {
+            color: #2c3e50;
+            margin-bottom: 0.8rem;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Xush kelibsiz!</h1>
+            <p class="subtitle">Mening shaxsiy veb saytimga xush kelibsiz</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Bosh sahifa</a></li>
+                <li><a href="#about">Men haqimda</a></li>
+                <li><a href="#services">Xizmatlar</a></li>
+                <li><a href="#contact">Aloqa</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="container">
+        <section id="home" class="section">
+            <h2>Bosh sahifa</h2>
+            <p>Salom! Men veb-dasturchiman va bu mening shaxsiy veb saytim. Bu yerda men o'zim haqimda ma'lumotlar, loyihalarim va kontaktlarimni joylashtirdim.</p>
+            <p>Veb-sayt yaratish, dizayn va dasturlash bo'yicha xizmatlar ko'rsataman. Har qanday savollaringiz bo'lsa, men bilan bog'lanishingiz mumkin.</p>
+            <a href="#contact" class="btn">Bog'lanish</a>
+        </section>
+        
+        <section id="about" class="section">
+            <h2>Men haqimda</h2>
+            <p>Men tajribali veb-dasturchiman. HTML, CSS, JavaScript va boshqa zamonaviy veb texnologiyalar bilan ishlayman. Har bir loyihani diqqat bilan o'ylab, foydalanuvchilar qulayligi va zamonaviy dizayn tamoyillariga rioya qilgan holda yarataman.</p>
+            <p>Mening maqsadim - mijozlarimning ehtiyojlariga javob beradigan yuqori sifatli veb yechimlar yaratishdir.</p>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Veb Dasturlash</h3>
+                    <p>HTML5, CSS3, JavaScript, React va boshqa zamonaviy texnologiyalar yordamida veb ilovalar yarataman.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Responsive Dizayn</h3>
+                    <p>Barcha qurilmalar (telefon, planshet, noutbuk) uchun moslashtirilgan veb saytlar yarataman.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Tezlik va Sifat</h3>
+                    <p>Tez yuklanadigan, SEO optimallashtirilgan va foydalanuvchilarga qulay interfeysli saytlar.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="services" class="section">
+            <h2>Xizmatlar</h2>
+            <p>Men quyidagi xizmatlarni taklif qilaman:</p>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Veb Sayt Yaratish</h3>
+                    <p>Shaxsiy, korporativ yoki savdo saytlari yaratish. Har bir loyiha mijozning ehtiyojlariga moslashtiriladi.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Veb Dizayn</h3>
+                    <p>Zamonaviy, foydalanuvchilarga qulay va jozibador veb-dizayn yaratish.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Veb Saytni Qayta Ishlash</h3>
+                    <p>Eski veb saytlarni yangilash, zamonaviy ko'rinish va funksionallik bilan jihozlash.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <h2>Aloqa</h2>
+            <p>Agar sizda veb-sayt yaratish yoki boshqa loyihalar haqida savollaringiz bo'lsa, menga murojaat qilishingiz mumkin:</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Email:</strong> info@example.com
+                </div>
+                <div class="contact-item">
+                    <strong>Telefon:</strong> +998 90 123 45 67
+                </div>
+                <div class="contact-item">
+                    <strong>Manzil:</strong> Toshkent shahar
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Mening Veb Saytim. Barcha huquqlar himoyalangan.</p>
+            <p>Ushbu veb-sayt HTML va CSS yordamida yaratilgan</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Silliq skroll navigatsiya uchun
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Header rangini o'zgartirish scroll qilganda
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.backgroundColor = '#2c3e50';
+            } else {
+                header.style.backgroundColor = '';
+            }
+        });
+    </script>
+</body>
+          </html>
